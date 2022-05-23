@@ -13,6 +13,7 @@
     "react": "^18.1.0",
     "react-dom": "^18.1.0",
     "react-scripts": "5.0.1",
+    "styled-components": "^5.3.5",
     "typescript": "^4.6.4",
     "web-vitals": "^2.1.4"
   },
@@ -23,12 +24,12 @@
     "eject": "react-scripts eject",
     "prepare": "husky install .husky"
   },
-  "husky": {
-    "hooks": {
-      "pre-commit": "npx pretty-quick --staged ng lint ng test",
-      "pre-push": "ng build --aot true"
-    }
-  },
+  // "husky": {
+  //   "hooks": {
+  //     "pre-commit": "npx pretty-quick --staged ng lint ng test",
+  //     "pre-push": "ng build --aot true"
+  //   }
+  // },
   "eslintConfig": {
     "extends": [
       "react-app",
@@ -48,6 +49,7 @@
     ]
   },
   "devDependencies": {
+    "@types/styled-components": "^5.1.25",
     "@typescript-eslint/eslint-plugin": "^5.25.0",
     "@typescript-eslint/parser": "^5.25.0",
     "eslint": "^8.15.0",
