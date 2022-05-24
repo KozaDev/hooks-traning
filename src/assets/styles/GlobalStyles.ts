@@ -5,18 +5,6 @@ export const GlobalStyle = createGlobalStyle`
     box-sizing: border-box;
   }
 
-  ::-webkit-scrollbar {
-    width: 15px;
-  };
-  
-  ::-webkit-scrollbar-track {
-    background-color: green;
-  };
-
-  ::-webkit-scrollbar-thumb {
-    background-color: pink;
-  };
-
   *, *::after, *::before {
     box-sizing: inherit;
   }
@@ -29,5 +17,22 @@ export const GlobalStyle = createGlobalStyle`
   
   a, button {
     font-family: 'Montserrat', sans-serif;
+  }
+  
+  ::-webkit-scrollbar {
+    width: 12px;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: ${({ theme }) => theme.colors.grey};
+    border-radius: 50px;
+
+    &:hover {
+      background-color: ${({ theme }) => theme.colors.darkGrey};
+    }
+  }
+
+  ::-webkit-scrollbar-track {
+    margin: 8px 0;
   }
 `;

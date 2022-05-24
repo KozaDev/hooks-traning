@@ -8,8 +8,8 @@ import { theme } from '../../../assets/styles/theme';
 function App() {
   return (
     <ThemeProvider theme={theme}>
+      <GlobalStyle />
       <StyledApp>
-        <GlobalStyle />
         <MainTemplate>
           <header>
             <h1>My template</h1>

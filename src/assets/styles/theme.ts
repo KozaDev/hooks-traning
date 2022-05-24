@@ -1,4 +1,33 @@
-export const theme = {
+import 'styled-components';
+import { DefaultTheme } from 'styled-components';
+
+declare module 'styled-components' {
+  interface DefaultTheme {
+    colors: {
+      white: string;
+      lightGrey: string;
+      grey: string;
+      darkGrey: string;
+      black: string;
+      success: string;
+      error: string;
+      warning: string;
+      darkPurple: string;
+      lightPurple: string;
+    };
+    fontSize: {
+      xl: string;
+      l: string;
+      m: string;
+      s: string;
+    };
+    navWidth: {
+      desktop: string;
+    };
+  }
+}
+
+export const theme: DefaultTheme = {
   colors: {
     white: '#FFFFFF',
     lightGrey: '#F7F8FA',
