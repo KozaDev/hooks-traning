@@ -24,12 +24,12 @@
     "eject": "react-scripts eject",
     "prepare": "husky install .husky"
   },
-  // "husky": {
-  //   "hooks": {
-  //     "pre-commit": "npx pretty-quick --staged ng lint ng test",
-  //     "pre-push": "ng build --aot true"
-  //   }
-  // },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npx pretty-quick --staged ng lint ng test",
+      "pre-push": "ng build --aot true"
+    }
+  },
   "eslintConfig": {
     "extends": [
       "react-app",
