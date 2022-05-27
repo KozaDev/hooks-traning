@@ -1,9 +1,16 @@
 {
-  "bracketSpacing": true,
-  "semi": true,
-  "singleQuote": true,
-  "trailingComma": "none",
-  "printWidth": 250,
-  "tabWidth": 2,
-  "endOfLine": "crlf"
+  "overrides": [
+    {
+      "files": "*.{ts,tsx}",
+      "options": {
+        "bracketSpacing": true,
+        "semi": true,
+        "singleQuote": true,
+        "trailingComma": "none",
+        "printWidth": 250,
+        "tabWidth": 2,
+        "endOfLine": "crlf"
+      }
+    }
+  ]
 }

@@ -1,26 +1,44 @@
-import React from 'react';
-import { StyledApp } from './App.styles';
+import React, { useState } from 'react';
 import { GlobalStyle } from '../../../assets/styles/GlobalStyles';
 import MainTemplate from '../../templates/MainTemplate/MainTemplate';
 import { ThemeProvider } from 'styled-components';
-import { theme } from '../../../assets/styles/theme';
+import { darkMode, ligthMode } from '../../../assets/styles/colors';
+import { sizes } from '../../../assets/styles/sizes';
 
-function App() {
+const App: React.FC = () => {
+  const [theme, setTheme] = useState({ colors: ligthMode, sizes });
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyle />
-      <StyledApp>
-        <MainTemplate>
-          <header>
-            <h1>My template</h1>
-            <p>
-              Edit <code>src/App.tsx</code> and save to reload.
-            </p>
-          </header>
-        </MainTemplate>
-      </StyledApp>
+      <MainTemplate>
+        <div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique.Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit
+          amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet
+          consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum
+          maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime,
+          minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem
+          inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore
+          nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut
+          magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam
+          impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit,
+          dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil
+          aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam
+          aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla
+          voluptas facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas
+          facilis ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis
+          ratione. Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione.
+          Debitis alias praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias
+          praesentium delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium
+          delectus similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus
+          similique. Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum maxime, minima autem inventore nisi aut magnam impedit, dolores nihil aliquam aperiam nulla voluptas facilis ratione. Debitis alias praesentium delectus similique.
+        </div>
+      </MainTemplate>
     </ThemeProvider>
   );
-}
+};
 
 export default App;

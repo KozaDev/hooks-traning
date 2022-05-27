@@ -22,7 +22,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "prepare": "husky install .husky"
+    "prepare": "husky install .husky",
+    "fix-eslint": "npx pretty-quick ng lint ng test"
   },
   "husky": {
     "hooks": {

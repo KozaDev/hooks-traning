@@ -1,5 +1,6 @@
 import React from 'react';
-import Navigation from '../../organisms/Navigation/Navigation';
+import Aside from '../../organisms/Aside/Aside';
+import Header from '../../organisms/Header/Header';
 import { Wrapper } from './MainTemplate.style';
 
 interface AuxProps {
@@ -8,10 +9,11 @@ interface AuxProps {
 
 const MainTemplate = ({ children }: AuxProps) => {
   return (
-    <Wrapper>
-      <Navigation />
-      {children}
-    </Wrapper>
+    <>
+      <Header />
+      <Aside />
+      <Wrapper>{children}</Wrapper>
+    </>
   );
 };
 
